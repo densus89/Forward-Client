@@ -4,14 +4,14 @@ import os
 
 class Config(object):
     # Get This From @TeleORG_Bot
-    API_ID = int(os.environ.get("11222461"))
-    API_HASH = os.environ.get("58de056b4c450ec866592b446d5acfee")
+    API_ID = int(os.environ.get(""))
+    API_HASH = os.environ.get("")
     # Get This From @StringSessionGen_Bot
-    STRING_SESSION = os.environ.get("BQBEjq4HbfVFHQUBxE_msv7k_lZo9CzRpFSvZifW6vKmBuSCB52mqAwot8j0eEyC0nx8tkCXbYFzDE_df_1dK3l8ZLQIOteAefHXt775rqS0NxU_R1ni6srYm58E0afsaC6-JWMlVUEhz2Fu6yBk8Bxie29AmzGM9W-_4Qg3mGJnxA9yLG6R1rEcOz52ZXE21NZ6qE3yRxD-yWnryVlHaTmwGdPQxXjxGT9AYG8Wxc5IWSdldfZ_-GL-jnuQkSCPf6TRk64G7b6VQ5K_IRafau9MtebSBeYZ4PMfsNA4oJVALkgrWhhsa0p6IeNNoBp4UYagXWAPpmF9hu49X2PYBAwKIxf5EgA")
+    STRING_SESSION = os.environ.get("")
     # Forward From Chat ID
-    FORWARD_FROM_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_FROM_CHAT_ID", "-1001477831252").split()))
+    FORWARD_FROM_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_FROM_CHAT_ID", "").split()))
     # Forward To Chat ID
-    FORWARD_TO_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_TO_CHAT_ID", "-1001646213934").split()))
+    FORWARD_TO_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_TO_CHAT_ID", "").split()))
     # Filters for Forwards
     DEFAULT_FILTERS = "video document photo audio text gif forwarded poll sticker"
     FORWARD_FILTERS = list(set(x for x in os.environ.get("FORWARD_FILTERS", DEFAULT_FILTERS).split()))
